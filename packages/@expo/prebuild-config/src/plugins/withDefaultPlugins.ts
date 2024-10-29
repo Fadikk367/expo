@@ -101,6 +101,7 @@ export const withAndroidExpoPlugins: ConfigPlugin<{
     // Note: The withAndroidIntentFilters plugin must appear before the withScheme
     // plugin or withScheme will override the output of withAndroidIntentFilters.
     AndroidConfig.IntentFilters.withAndroidIntentFilters,
+    AndroidConfig.Locales.withLocales,
     AndroidConfig.Scheme.withScheme,
     AndroidConfig.Orientation.withOrientation,
     AndroidConfig.Permissions.withInternalBlockedPermissions,

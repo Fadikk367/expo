@@ -775,6 +775,16 @@ export interface Android {
   runtimeVersion?:
     | string
     | { policy: 'nativeVersion' | 'sdkVersion' | 'appVersion' | 'fingerprint' };
+  /**
+   * Turns on automatic per-app language support for Android 13+ devices. Locales are taken from `locales` object keys. [Learn more] https://developer.android.com/guide/topics/resources/app-languages
+   */
+  enablePerAppLanguageSupport?: boolean;
+  /**
+   * Default locale for automatic per-app language support. Must be one of `locales` object keys.
+   *
+   * @defaultValue `en`
+   */
+  defaultLocale?: string;
 }
 export interface AndroidIntentFiltersData {
   /**
